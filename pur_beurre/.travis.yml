@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.6.5"
+
+env:
+- DJANGO=2.2 DB=postgres
+
+install:
+- pip install -r requirements.txt
+
+script: python3 manage.py test
+
+notifications:
+  email: false
